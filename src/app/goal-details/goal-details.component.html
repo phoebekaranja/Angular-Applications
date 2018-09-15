@@ -1,0 +1,11 @@
+<p>{{goal.description}}</p>
+<p>This goal will be completed in {{goal.completeDate|dateCount}} days</p>
+<button class="btn btn-danger" > Delete Goal </button>
+<button (click) = 'goalComplete(true)'> Delete Goal </button>
+  <h1>My Goals</h1>
+  <ul>
+      <div>
+       *ngFor='let goal of goals';let i = index'>
+          <!-- <li  id="{{i}}" appStrikethrough>{{goal.name}} due on {{goal.completeDate|date}}</li> -->
+    </div>
+      
